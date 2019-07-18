@@ -1,0 +1,57 @@
+h1, h2 {
+  font-size: 2em;
+}
+
+h1, h2 {
+  align-self: self-start;
+}
+
+p, a {
+  font-size: calc(14px + .25vw);
+}
+
+p {
+  line-height: 2;
+}
+
+main {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 3em 1em;
+  padding: 0;
+  min-height: calc(100vh - 85px);
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 1em 0;
+}
+
+.grid__single-col {
+  grid-column: 2 / 12;
+}
+
+.logo {
+  grid-row: 1;
+  grid-column: 2 / 6;
+  align-self: start;
+  margin: 0;
+}
+
+.nav {
+  grid-column: 6 / 12;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav__item {
+  font-size: 0.9em;
+}
+
+.logo__link {
+  font-size: 1.5em;
+  font-size: calc(48px + .25vw);
+}

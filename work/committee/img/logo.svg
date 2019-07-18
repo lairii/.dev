@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="163" height="39" viewBox="0 0 163 39">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#111" font-family="Avenir-Book, Avenir" font-size="28" letter-spacing="-2.4" opacity=".5" transform="translate(0 -2)">
+            <tspan x="49" y="28">committe</tspan> <tspan x="148.492" y="28">e</tspan>
+        </text>
+        <g fill-rule="nonzero">
+            <path fill="#00BCB8" fill-opacity=".501" d="M39 29L19 39V19z"/>
+            <path fill="#00BCB8" fill-opacity=".5" d="M0 29l20-10v20z"/>
+            <path fill="#16807D" fill-opacity=".503" d="M0 29l20-10v20z"/>
+            <path fill="#FFB3B9" fill-opacity=".501" d="M20 19L0 29V9z"/>
+            <path fill="#FFB3B9" fill-opacity=".5" d="M0 10L20 0v20z"/>
+            <path fill="#C1D4EE" fill-opacity=".502" d="M0 10L20 0v20z"/>
+            <path fill="#C1D4EE" fill-opacity=".501" d="M39 10L19 20V0z"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,127 @@
+:root {
+  --almostBlack: #111111;
+  --greenBlack: #232B2B;
+  --cuteMint: #A1D4CA;
+  --white: #fff;
+}
+
+::selection {
+  background: rgba(161, 212, 202, 0.95);
+}
+::-moz-selection {
+  background: rgba(161, 212, 202, 0.95);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: TomatoSoup;
+  src: url(../fonts/TomatoSoup.ttf);
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url(../fonts/RobotoLight.ttf);
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../fonts/RobotoRegular.ttf);
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(../fonts/RobotoBold.ttf);
+}
+
+body {
+  font-family: RobotoLight, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: RobotoRegular, sans-serif;
+}
+
+h1:not(.logo), h2 {
+  font-size: 2em;
+  margin: 0.5em 0 1em;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+h3, h4 {
+  font-size: 1.5em;
+  margin: 1em 0 0.5em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+ul, p {
+  line-height: 1.8;
+}
+
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.8em;
+}
+
+main {
+  background-color: var(--almostBlack);
+  color: var(--white);
+  height: 100%;
+  padding: 2em 1em 4em;
+  min-height: 100vh;
+  min-height: calc(100vh - 112px);
+}
+
+main a {
+  background-image: linear-gradient(var(--cuteMint), var(--cuteMint));
+  background-size: 100% 0.5em;
+  background-repeat: no-repeat;
+  background-position: left 0 bottom -60%;
+  padding: 0 0.1em;
+  font-family: RobotoRegular, sans-serif;
+  font-size: inherit;
+}
+
+main a:hover {
+  background-size: 100% 1.2em;
+  color: var(--almostBlack);
+  background-position: left 0 bottom 0;
+}
+
+/*** header styles ***/
+header {
+  background-color: var(--almostBlack);
+  color: var(--white);
+  padding: 1em;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.25);
+}
+
+nav {
+  margin: 0.5em 0 0 -0.5em;
+}
+
+.logo {
+  font-family: TomatoSoup, sans-serif;
+  margin: 0;
+}
+
+.logo__link {
+  font-size: 3.5em;
+}
+
+.nav__item {
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-family: RobotoRegular, sans-serif;
+}

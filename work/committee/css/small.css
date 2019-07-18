@@ -1,0 +1,187 @@
+:root {
+  --aqua: #00bcb8;
+}
+
+::selection {
+  background: #00bcb8;
+}
+::-moz-selection {
+  background: #00bcb8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: KhulaLight;
+  src: url(../fonts/KhulaLight.otf);
+}
+
+@font-face {
+  font-family: KhulaRegular;
+  src: url(../fonts/KhulaRegular.otf);
+}
+
+@font-face {
+  font-family: KhulaBold;
+  src: url(../fonts/KhulaBold.otf);
+}
+
+@font-face {
+  font-family: KhulaExtraBold;
+  src: url(../fonts/KhulaExtraBold.otf);
+}
+
+body {
+  font-family: KhulaRegular, sans-serif;
+}
+
+.text-extrabold {
+  font-family: KhulaExtraBold, sans-serif;
+}
+
+.text-bold {
+  font-family: KhulaBold, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+h3, h4 {
+  font-size: 1.5em;
+}
+
+p, a, li {
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+a {
+  color: var(--aqua);
+  outline: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+main {
+  background-color: #fff;
+  color: #35393c;
+  height: 100%;
+  padding: 0 1em;
+}
+
+/** cta **/
+
+.btn {
+  color: #fff;
+  padding: 15px 45px;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 1em auto;
+  cursor: pointer;
+}
+
+.btn-prim {
+  background-color: #fd5f6b;
+  box-shadow: 0 15px 30px -15px #fd5f6b;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/** arrows **/
+li {
+  padding-left: 1em;
+  position: relative;
+  margin-bottom: 0.2em;
+}
+
+li::before, .nav__item:nth-of-type(2)::after, .nav__item:nth-of-type(1)::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0.3em solid transparent;
+  border-bottom: 0.3em solid transparent;
+  border-left: 0.6em solid #e0d6e4;
+}
+
+li::before {
+  top: 0.4em;
+  left: 0;
+}
+
+.nav__item:nth-of-type(2)::after, .nav__item:nth-of-type(1)::after {
+  top: 0.9em;
+  right: -0.3em;
+  transform: rotate(-90deg);
+}
+
+
+/** header **/
+header {
+  background-color: #fff;
+  color: #35393c;
+  padding: 1em;
+}
+
+.logo {
+  margin: 0;
+}
+
+.logo__image {
+  max-width: 165px;
+}
+
+.nav__item {
+  font-size: 16px;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  color: var(--aqua);
+  position: relative;
+  padding-right: 1em;
+}
+
+/** main content tweaks **/
+.moped-piggy {
+  transform: rotate(-5deg);
+}
+
+/** footer **/
+footer {
+  box-shadow: 0 -2px 12px 0 rgba(0, 0, 0, 0.06);
+  margin-top: 6em;
+}
+
+footer, .footer__item {
+  padding: 0.5em 0;
+}
+
+.footer__item, .footer__text {
+  color: #35393c;
+  font-family: Avenir, sans-serif;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.footer__item:first-of-type {
+  margin-right: 0.5em;
+}
